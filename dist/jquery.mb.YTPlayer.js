@@ -20,7 +20,7 @@
  ___________________________________________________________________________________________________________________________________________________*/
 var ytp = ytp || {};
 
-function onYouTubeIframeAPIReady() {
+window.onYouTubeIframeAPIReady = function() {
 		if( ytp.YTAPIReady ) return;
 		ytp.YTAPIReady = true;
 		jQuery( document ).trigger( "YTAPIReady" );
